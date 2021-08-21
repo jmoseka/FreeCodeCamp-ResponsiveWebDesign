@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Survey Form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<div class="container">
+<body>
+	<header>
+		<h1>Survey Form</h1>
+	</header>
+
+	<div class="container-main">
+		<div class="img-div"><img src="https://i.postimg.cc/8zPwbLvW/proj.jpg" alt="image">
+		</div>
+		<p id="description">
+      Thank you for taking the time to help us improve the platform</p>
+		<form class="survey-form">
+
+			<div class="form-group">
+				<label id="name-label" for="name">Name</label><br>
+				<input 
+				type="text"
+                name="name"
+                id="name"
+                class="input-style"
+                placeholder="Enter your name"
+                required
+                />
+            </div>
+
+            <div class="form-group">
+				<label id="email-label" for="name">Email</label><br>
+				<input 
+				type="text"
+                name="email"
+                id="email"
+                class="input-style"
+                placeholder="Enter your email"
+                required
+                />
+            </div>
+
+           <div class="form-group">
+              <label id="number-label" for="number">
+               Age <span class="clue">(optional)</span></label><br>
+             <input
+             type="number"
+             name="age"
+             id="number"
+             min="10"
+             max="99"
+             class="input-style"
+             placeholder="Age"
+             />
+           </div>
+
+            <div class="form-group">
+      		 <p>Which option best describes your current role?</p>
+      			<select id="dropdown" name="role" class="input-style" required>
+       			 <option disabled selected value>Select current role</option>
+        		 <option value="student">Student</option>
+        	     <option value="job">Full Time Job</option>
+        		 <option value="learner">Full Time Learner</option>
+        		 <option value="preferNo">Prefer not to say</option>
+        		 <option value="other">Other</option>
+      		   </select>
+    		</div>
+
+         <div class="form-group">
+          <p>Would you recommend freeCodeCamp to a friend?</p>
+        <label>
+        <input
+          name="user-recommend"
+          value="definitely"
+          type="radio"
+          class="input-radio"
+          checked
+        />Definitely</label><br>
+      
+      <label>
+        <input
+          name="user-recommend"
+          value="maybe"
+          type="radio"
+          class="input-radio"
+        />Maybe</label><br>
+      
+
+      <label>
+       <input
+          name="user-recommend"
+          value="not-sure"
+          type="radio"
+          class="input-radio"/>
+        Not sure</label><br>
+      
+    </div>
+
+    <div class="form-group">
+      <p>Any comments or suggestions?</p>
+       <textarea
+        id="comments"
+        class="input-textarea"
+        name="comment"
+        placeholder="Enter your comment here...">
+       </textarea>
+    </div>
+
+    <div class="form-group">
+      <button type="submit" id="submit" class="submit-button">
+        SUBMIT
+      </button>
+    </div>
+   
+		</form>
+
+	</div>
+
+	<footer><a href="https://www.vecteezy.com/free-vector/hand">Hand Vectors by Vecteezy</a></footer>
+</body>
+</div>
+</html>

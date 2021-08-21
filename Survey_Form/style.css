@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+	{
+		font-family: 'Quicksand', sans-serif;
+}
+
+body{
+	text-align: center;
+	font-family: 'Quicksand', sans-serif;
+}
+
+body::before{
+    content: '';
+    position: fixed;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-image: linear-gradient(90deg, rgba(31,48,91,0.83) 0%,
+	rgba(31,48,91,0.77) 10%, rgba(30,47,91,0.53) 50%, rgba(31,48,91,0.77) 100%),
+    url('https://i.postimg.cc/23RLyWh3/boy-608821-1920.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;  
+    background-position: center;   
+}
+
+header{
+	padding: 0.625em;
+	color: #FBFCFF;
+}
+footer{
+	padding: 1rem;
+}
+h1{
+	margin: 0;
+}
+header p{
+	margin: 2px;
+}
+img{
+	width: 100%;
+}
+p,label
+{
+	font-size: 1rem;
+	font-weight: 500;
+	color: #1F305B;
+}
+a{
+    color: #c4efff;
+    text-decoration: none;
+ }
+
+.container{
+   width: 100%;
+   margin: 1.25rem auto 0 auto;
+   display: flex;
+	flex-direction: column;
+	justify-content: center;
+	
+   
+   /*margin-right: 3%;
+   margin-left: 3%;  
+  */
+}
+.container-main{
+	align-self: center;
+	max-width: 500px;
+   background: #ffffff;
+   border-radius: 20px;
+   padding-bottom: 10px;
+
+}
+
+.img-div{
+	margin: 20px;
+}
+.survey-form{
+	display: block;
+	position: relative;
+	text-align: left;
+	margin-left: 1rem;
+	margin-right: 1rem;
+   background: #d8e0f5;
+   margin-bottom: 0;
+   padding-bottom: 1.25rem;
+	border-radius: 10px;
+	
+}
+
+.form-group{
+	padding: 15px 15px 0px 0px;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	display: block;
+	
+
+}
+
+.input-style{
+	border: none;
+	outline:none;
+   background: none;
+	width: 100%;
+	padding: 15px 0px 15px 15px;
+	border-radius: 10px;
+	margin-top: 0.3125rem;
+	border-radius: 10px;
+    box-shadow:  inset 2px 2px 0px #B5B8BB /*#cbced1*/,
+          inset  -1px -2px 2px #F2F4F8;
+   font-size: 0.9375rem;
+	
+}
+
+.input-radio {
+  display: inline-block;
+  margin-right: 0.625rem;
+  min-height: 1.25rem;
+  min-width: 1.25rem;
+}
+
+.input-textarea {
+  min-height: 120px;
+  width: 98%;
+  padding: 0.625rem;
+  resize: none;
+  font-weight: bold;
+  font-size: 1rem;
+  color: #1F305B;
+}
+
+#submit{
+	padding: 8px 100px 8px 100px;
+	border: none;
+   display: block;
+  width: 100%;
+  padding: 0.75rem;
+  background-color: #74D6D6;
+  color: #0F172A;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  letter-spacing: 1px;
+}
+.submit-button: hover{
+	background-color: #0F172A;
+	
+}
