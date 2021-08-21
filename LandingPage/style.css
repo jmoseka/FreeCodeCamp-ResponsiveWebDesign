@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&family=Euphoria+Script&family=Source+Sans+Pro&display=swap');
+{
+	font-family: 'Euphoria Script', cursive;
+	font-family: 'Baloo Tamma 2', cursive;
+	margin: 0;
+	padding: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@500&display=swap');{
+	font-family: 'Prompt', sans-serif;
+}
+
+
+body{	
+	margin: 0 auto;
+	max-width: 100%;
+	width: 100%;
+	background-color: #f3f8f7;
+	font-family: font-family: 'Source Sans Pro', sans-serif;
+	 letter-spacing: .5px; 
+	 word-spacing: 2px;
+	
+}
+
+a{
+	text-decoration: none;
+	color: #e21f2b;
+	
+}
+
+nav{
+	margin: 0;
+	top: 0;
+	position: fixed;
+	width: 100%;
+	background-color: #f3f8f7;
+}
+
+ul{
+	color: #1c1514;
+	list-style: none;
+	display: flex;
+}
+
+
+footer{
+	text-align: center;
+	background-color: #9b9798;
+	padding: 10px;
+	color: #1c1514;
+	
+}
+
+footer a:hover{
+	color: pink;
+}
+
+ul a{
+	font-size: 17px;
+	color: #1c1514;
+	font-weight: bold;
+	padding: 15px;
+	
+}
+
+ul 
+a:focus,
+a:hover{
+	color: #9a8f90
+
+}
+
+#image{
+	display: inline-block;
+	width: 100%;
+}
+
+
+header{
+	background-color: #f3f8f7;
+}
+
+h1{
+	margin: 0;
+	font-family: 'Euphoria Script', cursive;
+	font-size: 70px;
+	
+}
+h2{
+	margin: 0;
+	font-family: 'Prompt', sans-serif;
+}
+
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.container{
+	margin: 5px;
+}
+
+.title-container{
+	margin-top: 60px;
+	border-top: 1px solid;
+	border-bottom: 1px solid;
+	text-align: center;
+	padding: 30px;
+	
+}
+.title-container h1{
+	color: #c8292e;
+}
+.title-container h2{
+	font-size: 20px;
+	color: #5e5351;
+}
+
+#img-div{
+	text-align: center;
+	background-color: white;
+	margin-top: 40px;
+
+}
+
+#tribute-info{
+	margin-top: 40px;
+}
+
+.subheading{
+	text-align: center;
+	padding: 15px;
+	margin-top: 25px;
+}
+
+.music{
+	background-color:#f3ebe8;
+	padding-bottom: 4px;
+}
+
+#awards{
+	text-align: center;
+}
+
+#tribute-link a{
+	padding: 0;
+	color: black;
+}
+
+@media(min-width: 1000px){
+
+	.container-flex{
+		display: flex;
+		justify-content: space-between;
+	}
+
+	main{
+		width: 50%;
+	}
+	aside{
+		width: 47%;
+	}
+
+}
