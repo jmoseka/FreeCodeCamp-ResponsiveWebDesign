@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Eagle+Lake&family=Lusitana&display=swap');
+{
+  font-family: 'Eagle Lake', cursive;
+  font-family: 'Lusitana', serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lusitana', serif;
+}
+
+
+
+
+html{
+  font-size: 10px;
+}
+
+header{
+  width: 100%;
+  position: absolute;
+  z-index: 1;
+  font-size: 4rem;
+  top: 3rem;
+}
+
+header h1{
+   position: absolute;
+   left: 8%;
+   color: #42312C;
+   font-family: 'Eagle Lake', cursive;
+}
+
+
+.slideshow{
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.1);
+ 
+  
+}
+
+.slideshow-item{
+  width: inherit;
+  height: inherit;
+  position: absolute;
+  opacity: 0;
+  animation: cycleImages 13s infinite;
+  
+}
+
+.slideshow-item:nth-child(1)
+{
+  animation-delay: 0s;
+}
+
+.slideshow-item:nth-child(2)
+
+{
+  animation-delay: 4s;
+}
+.slideshow-item:nth-child(3)
+{
+  animation-delay: 8s;
+}
+
+
+
+.slideshow-item img
+{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+ 
+}
+
+.slideshow-item-text{
+  position: absolute;
+  top: 28rem;
+  left: 2%;
+  transform: translateY(-50%);
+  padding: 10rem 5rem;
+  z-index: 1;
+
+}
+
+.slideshow-item-text h5{
+  font-size: 5rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+.slideshow-item-text p{
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+
+}
+
+@keyframes cycleImages{
+   45%{
+    opacity: 1;
+  }
+
+  50%{
+    opacity: 0;
+  }
+}
+
+#banner-button{
+  z-index: 1;
+  position: absolute;
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border: none;
+  background: #B46245;
+  border-radius: 2rem;
+  top: 50rem;
+  right: 10%;
+  color: #fff;
+  font-weight: bold;
+}
+#banner-button: hover,focus{
+  background-color: #fff;
+}
+
+
+.info-flex{
+  display: flex;
+   flex-direction: column;
+  justify-content: space-evenly;
+  padding: 4rem;
+  background: rgb(188,80,42);
+  background: linear-gradient(90deg, rgba(188,80,42,1) 9%, rgba(112,96,127,1) 54%, rgba(112,39,23,1) 90%);
+  justify-content: space-evenly;
+
+
+}
+
+.sub-info-flex{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 2rem;
+}
+
+.info-icon{
+  background: white;
+  padding: 2rem;
+  border-radius: 50%;
+  width: 7rem;
+  height: 7rem;
+}
+
+
+.info{
+  margin-left: 1rem;
+  color: #e6f1f7;
+}
+.info h1{
+  font-size: 2.4rem;
+  letter-spacing: .3px;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.info p{
+  font-size: 1.6rem;
+}
+
+
+.blog{
+ text-align: center;
+}
+.blog span{
+  font-size: 1.3rem;
+}
+
+.blog-title{
+  padding: 3rem;
+   background-color: #e6f1f7;
+   color: #42312C;
+}
+.blog-title h1{
+  font-size: 4rem;
+}
+
+#article-img {
+  width: 100%;
+}
+
+article{
+  text-align: center;
+  margin: 3rem;
+}
+
+.article-title,
+.article_text
+ {
+  text-align:left;
+  padding: 1rem;
+}
+
+.article-title h2{
+  font-size: 2rem;
+  padding-top: 1rem;
+  text-align: left;
+  color: #574F4E;
+
+}
+article p{
+  font-size: 1.5rem;
+  text-align: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+#article-btn{
+  padding-right: 3rem;
+  padding-left: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: left;
+}
+
+.quote{
+  width: 100%;
+  height: 20rem;
+  background-image: url("https://i.postimg.cc/Gt9y2y0k/self-love.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: table;
+  text-align: center;
+   
+
+}
+.quote h1{
+  display: table-cell;
+  vertical-align: middle;
+  color: #fff;
+  font-size: 2rem;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+
+.testimony{
+  padding-top: 1.8rem;
+  text-align: center;
+
+}
+.testimony p{
+  font-size: 1.4rem;
+}
+.testimony h1{
+  padding-top: 2rem;
+  font-size: 2.3rem;
+}
+.testimony span{
+  color: #BC502A;
+}
+.testimony div h2{
+  padding: 1rem;
+}
+.testimony a{
+  text-decoration: none;
+   color: #BC502A;
+}
+
+
+.testimony-flex{
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+ 
+}
+
+.test-img h2{
+  padding-top: .5rem;
+  font-size: 2rem;
+ 
+}
+
+#test-img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  
+  
+}
+
+.test-quote{
+  display: table;
+}
+.test-quote p{
+  display: table-cell;
+  vertical-align: middle;
+
+}
+
+footer{
+  padding: 4rem;
+  display: block;
+  text-align: center;
+  background: rgb(188,80,42);
+  background: linear-gradient(90deg, rgba(188,80,42,1) 9%, rgba(112,96,127,1) 54%, rgba(112,39,23,1) 90%);
+  
+}
+
+.survey-form{
+  font-size: 2rem;
+  color: #e6f1f7;;
+}
+
+.form-group{
+  padding-top: 1rem;
+}
+input{
+  padding-right: 11rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border: none;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.3);
+
+}
+.submit-button{
+  border: none;
+  border: 1px solid #fff;
+  color: #fff;
+  padding-left: 9rem;
+  padding-right: 9rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #BC502A;
+}
+
+.submit-button: hover{
+   background-color: #fff;
+}
+
+
+
+
+
+
+
+
+
+@media(min-width: 800px){
+
+ header h1{
+  font-size: 10rem;
+ }
+
+  #banner-button{
+  padding-right: 6rem;
+  padding-left: 6rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  right: 15%;
+  font-size: 2rem;
+    top:82rem;
+}
+
+.slideshow-item-text{
+  max-width: 50%;
+  position: absolute;
+  top: 60%;
+  left: 20%;
+  transform: translateY(-50%);
+  padding: 10rem 5rem;
+}
+.slideshow-item-text p{
+  font-size: 1.8rem;
+}
+
+  .info-flex{
+    flex-direction: row;
+  }
+
+  .blog-flex{
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.testimony p{
+  font-size: 1.7rem;
+}
+.testimony h1{
+  padding-top: 2rem;
+  font-size: 3rem;
+}
+.testimony div{
+  
+}
+
+.testimony-flex{
+  flex-direction: row;
+  
+}
+.test-quote{
+  width: 70%;
+  margin-right: 5rem;
+  
+}
+.test-img{
+  width: 30%;
+  text-align: center;
+  margin-left: 2rem;
+  margin-top: 1rem;
+}
+
+  .slideshow-item-text{
+    max-width: 70%;
+    padding: 5rem 1rem;
+  }
+
+  .slideshow-item-text h5{
+    font-size: 4rem;
+  }
+}
